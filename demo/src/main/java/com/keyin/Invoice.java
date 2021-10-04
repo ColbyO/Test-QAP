@@ -1,12 +1,12 @@
 package com.keyin;
 
-public class InvoiceItem {
+public class Invoice {
     private String id;
     private String desc;
     private int qty;
     private double unitPrice;
 
-    InvoiceItem(String id, String desc, int qty, double unitPrice){
+    Invoice(String id, String desc, int qty, double unitPrice){
         this.id = id;
         this.desc = desc;
         this.qty = qty;
@@ -45,7 +45,7 @@ public class InvoiceItem {
 
     public String toString(){
         return(
-            "InvoiceItem[id="+getID()+",desc="+getDesc()+",qty="+getQty()+",unitPrice="+getUnitPrice()+"]"
+            "Invoice[id="+getID()+",desc="+getDesc()+",qty="+getQty()+",unitPrice="+getUnitPrice()+"]"
         );
     }
 }
